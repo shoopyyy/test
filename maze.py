@@ -10,7 +10,7 @@ DIRECTIONS = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 class Maze:
 
     def __init__(self, size=8):
-        """Initialize a new, random maze using depth first search"""
+        """ new random maze using depth first search"""
         self.size = size
         self.shape = (2*size + 1,)*2 
         self.maze = np.zeros(shape=self.shape, dtype=bool) # all walls at first
